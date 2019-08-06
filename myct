@@ -1,0 +1,4 @@
+0 2 * * * /home/c/test_fab/git_code.sh
+* 3,6-23 * * * /home/c/test_fab/check_log.sh
+0 * * * * for f in `/usr/bin/find /tmp/ -name .com* 2>/dev/null`;do rm -rf $f;done
+0 * * * * for f in `/usr/bin/find /tmp/ -name .org* 2>/dev/null`;do rm -rf $f;done
